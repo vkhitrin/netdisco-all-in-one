@@ -1,0 +1,12 @@
+#!/usr/bin/expect -f
+set timeout -1
+spawn netdisco-deploy
+expect "is all of the above in place" { send "y\r" }
+expect "Would you like to deploy the database schema" { send "y\r" }
+expect "Username:"
+send -- "admin\r"
+expect "Password:"
+send -- "admin\r"
+expect "Download and update vendor MAC prefixes" { send "y\r" }
+expect "Download and update MIB files" { send "y\r" }
+expect eof

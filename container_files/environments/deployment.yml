@@ -1,0 +1,12 @@
+---
+# Connection to database
+database:
+  name: netdisco
+  user: netdisco
+  pass: netdisco
+# Authenticate with network devices using SNMPv2 groups
+# device_auth:
+#   - tag: 'public'
+#     community: 'public'
+#     read: true
+#     write: false
